@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ac_ManChao">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/manchao" />
+
+    <TextView
+        android:id="@+id/tv_01"
+        android:layout_width="331dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="350dp"
+        android:gravity="center_vertical"
+        android:text="Welcome to_______"
+        android:textColor="#F21C1C"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/tv_02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_01"
+        android:text="P   H   2   9   2   9   0"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_02"
+        android:text="c a o d a n g .f p t.e d u. v n "
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="#F21C1C"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:src="@drawable/manchao_a" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="400dp"
+            android:src="@drawable/manchao_a" />
+    </LinearLayout>
+
+
+</RelativeLayout>

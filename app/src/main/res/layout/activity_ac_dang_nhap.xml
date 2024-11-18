@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dangnhap"
+    tools:context=".Ac_DangNhap">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:text="Đăng Nhập"/>
+
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ip_lg_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFEEED"
+                android:hint="Nhập Username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ip_lg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_margin="10dp"
+                android:background="#FFEEED"
+                android:maxLines="1"
+                android:drawableEnd="@drawable/ic_eye_pass"
+                android:hint="Password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:layout_marginLeft="5dp"
+            android:id="@+id/chk_lg_luumk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu mật khẩu"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_lg_dangnhap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DBC9C8"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:text="Đăng Nhập " />
+        <Button
+            android:id="@+id/btn_lg_exit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DBC9C8"
+            android:textColor="@color/black"
+            android:text="Exit" />
+    </LinearLayout>
+
+</RelativeLayout>
